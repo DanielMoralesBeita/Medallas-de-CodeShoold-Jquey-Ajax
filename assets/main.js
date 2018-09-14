@@ -2,7 +2,7 @@ $(function() {
 
   $.ajax({
      
-        url: 'https://raw.githubusercontent.com/DanielMoralesBeita/Medallas-de-CodeShoold-Jquey-Ajax/master/assets/1789994.json',
+        url: 'https://rawgit.com/DanielMoralesBeita/Medallas-de-CodeShoold-Jquey-Ajax/master/assets/1789994.json',
     dataType: 'jsonp',
     success: function(data) {
       populateWithCourses(data.courses.completed)
