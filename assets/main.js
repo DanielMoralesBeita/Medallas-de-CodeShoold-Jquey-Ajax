@@ -6,7 +6,7 @@ $(function() {
     dataType: 'jsonp',
     success: function(data) {
       populateWithCourses(data.courses.completed)
-    });
+    }});
 
   function populateWithCourses(courses) {
 
