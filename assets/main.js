@@ -7,7 +7,7 @@ $(function() {
     success: function(data) {
       populateWithCourses(data.courses.completed)
     }});
-
+});
   function populateWithCourses(courses) {
 
     var $badges = $('#badges');
