@@ -3,9 +3,9 @@ $(function() {
   $.ajax({
      
         url: 'https://rawgit.com/DanielMoralesBeita/Medallas-de-CodeShoold-Jquey-Ajax/master/assets/1789994.json',
-    dataType: 'jsonp',
-    success: function(data) {
-      populateWithCourses(data.courses.completed)
+    content: "application/json; charset=utf-8",
+    success: function(data) { console.log(data);
+      populateWithCourses(data[0].courses.completed)
     }});
 });
   function populateWithCourses(courses) {
